@@ -76,16 +76,16 @@ const Home = () => {
                 <Slider {...settings}>
 
                     <div className="banners">
-                      <img src="https://refixya.com/assets/media/uploadmajor-brand/hp/hp-laptop-service-centre-kalyan/hp.png" alt=""/>
+                      <img src="https://i1.wp.com/theultrasoft.com/wp-content/uploads/2016/04/Online-Medical-Stores.jpg?fit=1600%2C1067" alt=""/>
                     </div>
                     <div className="banners">
-                      <img src="https://m.media-amazon.com/images/S/aplus-media/vc/342b936a-69f1-4e59-89ba-7ddb98c1acda.jpg" alt=""/>
+                      <img src="https://www.dhl.com/content/dam/dhl/global/delivered/images/text-generic-1592x896/delivered-issue-03-2019-buying-medicine-online-1.web.597.336.jpg" alt=""/>
                     </div>
                     <div className="banners">
-                        <img src="https://cdn.shopify.com/s/files/1/1780/7915/files/Thermaltake_Level_20_RGB_Titanium_Gaming_Keyboard_From_The_Peripheral_Store_Banner_01.jpg?v=1598266526" alt=""/>
+                        <img src="https://blog.ipleaders.in/wp-content/uploads/2020/08/Online-pharmacy-1200x600-1.jpg" alt=""/>
                     </div>
                     <div className="banners">
-                        <img src="https://cdn.shopify.com/s/files/1/1780/7915/files/Game_Monitor_6a7a1deb-2d61-4307-99ac-f8c5a18d298f.jpg?8000210842524768871" alt=""/>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa_VVy5OSsNfchGcILDFRN_Xknz0FS0kpEjg&usqp=CAU" alt=""/>
                     </div>
 
                 </Slider>
