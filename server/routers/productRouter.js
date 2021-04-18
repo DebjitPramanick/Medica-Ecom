@@ -27,5 +27,4 @@ productRouter.get('/:id', expressAsyncHandler(async(req,res) => {
     }
 }))
 
-
 export default productRouter;
