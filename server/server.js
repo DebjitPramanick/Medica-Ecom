@@ -10,8 +10,8 @@ import orderRouter from './routers/orderRouter.js'
 dotenv.config();
 
 const app = express()
-const port = process.env.PORT || 5000;
-const connection_url = "<Connection Link>";
+const port = process.env.PORT || 8000;
+const connection_url = "mongodb+srv://debjit:1XdCSq4kymDMQLE2@cluster0.k6xir.mongodb.net/ecomDB?retryWrites=true&w=majority";
 
 mongoose.connect(connection_url,{
     useCreateIndex: true,
