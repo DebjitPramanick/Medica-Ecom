@@ -43,6 +43,19 @@
     outline: 0;
 }
 
+.close-btn{
+    background-color: #ff6955;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 16px;
+    font-size: 18px;
+    outline: 0;
+}
+
 .new-user-register{
     margin-top: 30px;
     font-size: 16px;
