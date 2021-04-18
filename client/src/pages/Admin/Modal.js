@@ -1,18 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import "../../styles/Modal.css"
 import axios from "../../Axios"
 
-function Modal({handleClose}) {
+function Modal({ handleClose }) {
+
+    const pdImage = useRef()
+
     const [name, setname] = useState('');
-    const [image, setimage] = useState('https://i0.wp.com/post.greatist.com/wp-content/uploads/sites/2/2019/11/GRT-birth-control-pills-732x549-thumb.jpg?w=1155&h=1152');
+    const [imageFile, setImageFile] = useState({});
     const [description, setdes] = useState('');
     const [stock, setstock] = useState(0);
     const [price, setprice] = useState(0);
 
-    function submit(e) {
+    const toBase64 = () => new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(imageFile);
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+    });
+
+    async function submit(e) {
         e.preventDefault()
 
-        if(name && description && price && stock){
+        if (name && description && price && stock && imageFile) {
+            let image = await toBase64()
             const product = {
                 name,
                 description,
@@ -21,14 +32,12 @@ function Modal({handleClose}) {
                 image
             }
             axios.post('/api/products/seed', product)
-            .then(res => console.log(res))
+                .then(res => console.log(res))
         }
 
-        else{
+        else {
             alert("Please fill all the fields.")
         }
-
-        
     }
 
     return (
@@ -39,13 +48,13 @@ function Modal({handleClose}) {
 
                 <div className="text-field">
                     <label for="name">Name:</label>
-                    <input type="text" onChange={(e) => setname(e.target.value)} value={name}/>
+                    <input type="text" onChange={(e) => setname(e.target.value)} value={name} />
                 </div>
 
 
                 <div className="text-field">
                     <label for="image">Image:</label>
-                    <input type="file" accept="image/"></input>
+                    <input type="file" accept="image/" onChange={(e) => setImageFile(e.target.files[0])} ref={pdImage}></input>
                 </div>
 
 
@@ -57,20 +66,20 @@ function Modal({handleClose}) {
 
                 <div className="text-field">
                     <label for="price">Price:</label>
-                    <input type="text" onChange={(e) => setprice(e.target.value)} value={price}/>
+                    <input type="text" onChange={(e) => setprice(e.target.value)} value={price} />
                 </div>
 
 
                 <div className="text-field">
                     <label for="stock">Stock:</label>
-                    <input type="text" onChange={(e) => setstock(e.target.value)} value={stock}/>
+                    <input type="text" onChange={(e) => setstock(e.target.value)} value={stock} />
                 </div>
 
                 <div className="btn-container">
                     <button onClick={submit} className="submit-btn">Submit</button>
                     <button onClick={handleClose} className="close-btn">Close</button>
                 </div>
-                
+
             </form>
         </div>
     )

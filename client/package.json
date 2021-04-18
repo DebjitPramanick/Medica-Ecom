@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^12.6.0",
     "axios": "^0.21.1",
     "chokidar": "^3.5.1",
+    "compress-base64": "^1.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-paypal-button-v2": "^2.6.2",
