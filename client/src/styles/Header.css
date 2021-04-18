@@ -9,7 +9,7 @@ a{
 }
 
 header {
-  background-color: #131A22;
+  background-color: #67C3F5;
   margin-bottom: 20px;
 }
 
@@ -34,6 +34,19 @@ header .inner-content {
 .category-container ul li{
   display: inline-block;
   margin-right: 20px;
+}
+
+.header_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_right .search-bar{
+  flex: 0.7;
+  width: 50%;
+}
+.header_right ul{
+  flex: 0.3;
 }
 
 .category-container ul li a{
@@ -68,7 +81,7 @@ header .brand a {
   align-items: center;
   border-radius: 6px;
   overflow: hidden;
-  width: 60%;
+  width: 80%;
   background-color: #f0c040;
 }
 

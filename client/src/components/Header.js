@@ -49,9 +49,11 @@ const Header = (props) => {
             <div className="container">
                 <div className="inner-content">
                     <div className="brand">
-                        <Link to="/">Amazon Clone</Link>
+                        <Link to="/">Media Ecom</Link>
                     </div>
 
+                    
+                    <div className="header_right">
                     <div className="search-bar">
                         <input className="search-input"
                         onChange={(e)=> setQuery(e.target.value)}
@@ -66,8 +68,8 @@ const Header = (props) => {
                         </div>
                         
                     </div>
-
                     <ul className="nav-links">
+                    
                         <li>
                             <Link to="/cart"><ShoppingCartIcon/>
                                 {
@@ -128,17 +130,11 @@ const Header = (props) => {
                         
                             
                     </ul>
+                    </div>
+                    
                 </div>
 
-                <div className="category-container">
-                    <ul>
-                        <li><Link to="/category/mobile">Mobile</Link></li>
-                        <li><Link to="/category/laptop">Laptop</Link></li>
-                        <li><Link to="/category/monitor">Monitor</Link></li>
-                        <li><Link to="/category/accessories">Computer Accessories</Link></li>
-                        <li><Link to="/category/earphones">Earphones</Link></li>
-                    </ul>
-                </div>
+                
             </div>
         </header>
     )
