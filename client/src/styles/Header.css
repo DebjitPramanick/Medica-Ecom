@@ -1,15 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
 header {
-  background-color: #67C3F5;
+  background-color: #67c3f5;
   margin-bottom: 20px;
 }
 
@@ -20,47 +20,51 @@ header .inner-content {
   padding: 14px 22px;
 }
 
-.category-container{
-  background-color: #232F3E;
+.category-container {
+  background-color: #232f3e;
   padding: 14px 22px;
   font-weight: 500;
   color: white;
 }
 
-.category-container ul{
+.category-container ul {
   list-style-type: none;
 }
 
-.category-container ul li{
+.category-container ul li {
   display: inline-block;
   margin-right: 20px;
 }
 
-.header_right{
+.header_right {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header_right .search-bar{
+.header_right .search-bar {
   flex: 0.7;
   width: 50%;
 }
-.header_right ul{
+.header_right ul {
   flex: 0.3;
 }
 
-.category-container ul li a{
+.category-container ul li a {
   white-space: nowrap;
   font-size: 18px;
 }
 
-@media(max-width: 760px){
-  header .inner-content{flex-direction: column !important;}
-  .brand{margin-bottom: 30px;}
+@media (max-width: 760px) {
+  header .inner-content {
+    flex-direction: column !important;
+  }
+  .brand {
+    margin-bottom: 30px;
+  }
 }
 
 header a {
-  color: white;
+  color: #131a22;
   font-size: 1.1rem;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -75,8 +79,7 @@ header .brand a {
   font-size: 1.5rem;
 }
 
-
-.search-bar{
+.search-bar {
   display: flex;
   align-items: center;
   border-radius: 6px;
@@ -85,7 +88,7 @@ header .brand a {
   background-color: #f0c040;
 }
 
-.search-input{
+.search-input {
   padding: 12px;
   font-size: 18px;
   width: 100%;
@@ -93,20 +96,18 @@ header .brand a {
   border: 0;
 }
 
-.search-btn{
+.search-btn {
   cursor: pointer;
   text-align: center;
   outline: 0;
   border: 0;
   display: block;
 }
-.search-btn a{
+.search-btn a {
   display: block;
   color: #000000;
   padding: 6px;
 }
-
-
 
 header .nav-links {
   padding: 0;
@@ -122,49 +123,46 @@ header .nav-links li {
   margin-left: 30px;
 }
 
-.header-dropdown{
-  border: solid 1px white;
+.header-dropdown {
+  border: solid 1px #131a22;
   padding: 6px 10px;
   border-radius: 6px;
   position: relative;
-  color: white;
+  color: #131a22;
   min-width: 160px;
 }
 
-.header-dropdown p{
+.header-dropdown p {
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.dropdown-content{
-  background-color: #131A22;
+.dropdown-content {
+  background-color: #67c3f5;
   position: absolute;
   display: none;
   right: 0;
   width: 100%;
   margin-top: 20px;
-  border: solid 1px white;
+  border: solid 1px #131a22;
   border-radius: 6px;
   z-index: 555;
 }
 
-.dropdown-content li{
+.dropdown-content li {
   margin: 14px;
 }
 
-.dropdown-content.show{
-  background-color: #131A22;
+.dropdown-content.show {
   position: absolute;
   display: block;
   right: 0;
   width: 100%;
   margin-top: 20px;
-  border: solid 1px white;
   border-radius: 6px;
 }
-
 
 .nav-links li a {
   display: flex;
@@ -172,11 +170,11 @@ header .nav-links li {
   justify-content: space-between;
 }
 
-.header-user-name{
+.header-user-name {
   margin-left: 14px;
 }
 
-.badge{
+.badge {
   background-color: red;
   color: white;
   width: 16px;
@@ -188,31 +186,30 @@ header .nav-links li {
   margin-left: 6px;
 }
 
-@media(max-width: 900px){
-    .search-bar{
-      width: 100%;
-      margin-bottom: 30px;
-    }
+@media (max-width: 900px) {
+  .search-bar {
+    width: 100%;
+    margin-bottom: 0;
+  }
 
-    .nav-links{
-      flex-direction: row-reverse;
-      justify-content: center;
-    }
+  .nav-links {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
 
-    header .brand a{
-      font-size: 1.2rem;
-    }
-    header .brand{
-      margin-bottom: 10px;
-    }
+  header .brand a {
+    font-size: 1.2rem;
+  }
+  header .brand {
+    margin-bottom: 10px;
+  }
 
-    .category-container{
-      margin-top: 16px;
-    }
+  .category-container {
+    margin-top: 16px;
+  }
 
-    .category-container ul{
-      display: flex;
-      overflow-x: scroll;
-    }
-
+  .category-container ul {
+    display: flex;
+    overflow-x: scroll;
+  }
 }

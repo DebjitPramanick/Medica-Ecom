@@ -12,6 +12,12 @@ import SearchIcon from '@material-ui/icons/Search';
 
 const Header = (props) => {
 
+    let t = Math.floor(Math.random()*10)
+    if(t>5){
+        t = t - 5
+    }
+    console.log(t)
+
     const dispatch = useDispatch();
 
     const [dropdown, setDropDown] = useState(false);

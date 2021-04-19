@@ -11,9 +11,9 @@ productRouter.get('/', expressAsyncHandler(async (req,res) => {
 
 productRouter.post('/seed', expressAsyncHandler(async(req,res) => {
 
-    let rating = Math.floor(Math.random()*10)
-    if(rating > 5){
-        rating = rating - 5
+    let stars = Math.floor(Math.random()*10)
+    if(stars > 5){
+        stars = stars - 5
     }
 
     let rev = Math.floor(Math.random()*100)
@@ -23,7 +23,7 @@ productRouter.post('/seed', expressAsyncHandler(async(req,res) => {
         name: req.body.name,
         description: req.body.description,
         price: req.body.price,
-        rating: rating,
+        rating: stars,
         numRev: rev,
         stock: req.body.stock
     }]
