@@ -55,7 +55,7 @@ const Header = (props) => {
             <div className="container">
                 <div className="inner-content">
                     <div className="brand">
-                        <Link to="/">Media Ecom</Link>
+                        <Link to="/">Medica Ecom</Link>
                     </div>
 
                     

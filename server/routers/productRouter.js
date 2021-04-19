@@ -17,7 +17,7 @@ productRouter.post('/seed', expressAsyncHandler(async(req,res) => {
     }
 
     let rev = Math.floor(Math.random()*100)
-
+    
     const products = [{
         image: req.body.image,
         name: req.body.name,
