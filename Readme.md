@@ -66,12 +66,12 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. Install node modules
    ```
-   npm  install
+   npm install
    ```
 3. Start client
    ```
    cd client
-   npm  start
+   npm start
    ```
 4. Start server
    ```
